@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yash.votingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="VOTE From Home"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login_registration" />
+        <activity android:name=".AfterLoginScreen"/>
+        <activity android:name=".Registration" />
+        <activity android:name=".AddAdminScreen" />
+        <activity android:name=".OtpSubmitScreen" />
+        <activity android:name=".ReportScreen" />
+        <activity android:name=".CandidateList" />
+        <activity android:name=".ForgetScreen" />
+        <activity android:name=".ReportListItem" />
+        <activity android:name=".VoteConfirmDialouge" />
+        <activity android:name=".VoteResultDialouge" />
+    </application>
+
+</manifest>

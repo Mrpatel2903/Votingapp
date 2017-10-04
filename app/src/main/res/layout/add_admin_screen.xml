@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yash.votingapp.AddAdminScreen">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/firstname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#b97a56"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:hint="Enter candidate first name"
+                    android:padding="5dp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/lastname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#b97a56"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:padding="5dp"
+                    android:hint="lastname" />
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:text="Shivasena BJP  Congress "
+                    android:layout_gravity="left"
+                    android:textColor="#b97a56"
+                    />
+
+                <EditText
+                    android:id="@+id/partyname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:hint="party name"
+                    android:textColorHint="#b97a56"
+                    android:background="@drawable/background_round_corner_edittext" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/symbol_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textColorHint="#b97a56"
+                    android:hint="symbol name"
+                    android:background="@drawable/background_round_corner_edittext" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_round_corner_button"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="save" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_round_corner_button"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:text="cancel" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.yash.votingapp.ReportListItem">
+
+    <ImageView
+        android:id="@+id/PartyLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/independant"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/CandidateName_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/party_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/result_count_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:text="100"
+            android:layout_margin="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0A122A"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yash.votingapp.ForgetScreen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="entersecurityhint" />
+
+            <EditText
+                android:id="@+id/securityhint_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:hint="Enter your hint"
+                android:background="@drawable/background_round_corner_edittext"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/securityhint_edt"
+                android:text="yourpassword" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="15dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="15dp"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/getpassword_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/background_round_corner_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="getpassword" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_round_corner_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_alignParentTop="true"
+                android:text="cancel" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
