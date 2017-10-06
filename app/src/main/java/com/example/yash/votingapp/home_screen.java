@@ -43,11 +43,8 @@ public class home_screen extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                // TODO Auto-generated method stub
-                Toast.makeText(home_screen.this, "Report will be display soon", Toast.LENGTH_LONG).show();
-               // Intent i = new Intent(home_screen.this, ReportScreen.class);
-                //startActivity(i);
+                Intent i = new Intent(home_screen.this, ReportScreen.class);
+                startActivity(i);
             }
         });
     }
